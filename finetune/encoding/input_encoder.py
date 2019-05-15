@@ -15,7 +15,7 @@ import numpy as np
 import tensorflow as tf
 
 
-NLP = spacy.load('en', disable=['parser', 'tagger', 'ner', 'textcat'])
+NLP = spacy.load('en_core_web_sm', disable=['parser', 'tagger', 'ner', 'textcat'])
 
 EncodedOutput = namedtuple("EncodedOutput", [
     "token_ids", # list of list of subtoken ids (ints)
